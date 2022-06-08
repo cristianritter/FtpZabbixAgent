@@ -62,13 +62,13 @@ def get_files_size_sum():
     return tamanho_total_gb
 
 def LoopPrincipal():
-    while(True):
-        tamanhoGB = get_files_size_sum()
-        zabbix_data[0] = tamanhoGB / float(parsed_config['storage']['size_gb'])
-        sleep(int(parsed_config['zabbix']['send_metrics_interval']))
+    while(True):                                                                        # Loop infinito
+        tamanhoGB = get_files_size_sum()                                                # Get soma do tamanho total de arquivos no storage
+        zabbix_data[0] = tamanhoGB / float(parsed_config['storage']['size_gb'])         # Salva dados no ponteiro de envio para zabbix
+        sleep(int(parsed_config['zabbix']['send_metrics_interval']))                    # Tempo de espera entre as métricas
     
-t = Thread(target=LoopPrincipal, daemon=True)
-t.start()
+t = Thread(target=LoopPrincipal, daemon=True)                       # Criação de thread de processo paraleo
+t.start()                                                           # Start do processo paralelo
 
 app = wx.App()   #criação da interface gráfica
 TaskBarIcon(f"FTPZabbixAgent") 

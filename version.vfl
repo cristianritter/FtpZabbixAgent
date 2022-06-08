@@ -14,13 +14,13 @@ VSVersionInfo(
       [
       StringTable(
         u'040904B0',
-        [StringStruct(u'CompanyName', u'Cristian Ritter SW'),
-        StringStruct(u'FileDescription', u'WRLogWatcher'),
+        [StringStruct(u'CompanyName', u'Cristian Ritter Dev'),
+        StringStruct(u'FileDescription', u'FTPZabbixAgent'),
         StringStruct(u'FileVersion', u'1.0 (win7sp1_rtm.101119-1850)'),
-        StringStruct(u'InternalName', u'WRLogWatcher'),
-        StringStruct(u'LegalCopyright', u'\xa9 CR Softwares. All rights reserved.'),
-        StringStruct(u'OriginalFilename', u'WRLogWatcher.exe'),
-        StringStruct(u'ProductName', u'WRLogWatcher'),
+        StringStruct(u'InternalName', u'FTPZabbixAgent'),
+        StringStruct(u'LegalCopyright', u'\xa9 Cristian Ritter Dev. All rights reserved.'),
+        StringStruct(u'OriginalFilename', u'FTPZabbixAgent.exe'),
+        StringStruct(u'ProductName', u'FTPZabbixAgent'),
         StringStruct(u'ProductVersion', u'1.0')])
       ]), 
     VarFileInfo([VarStruct(u'Translation', [1033, 1200])])

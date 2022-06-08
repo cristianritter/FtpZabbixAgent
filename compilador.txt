@@ -1,2 +1,2 @@
-pyinstaller -D --onedir --ico=icon.ico --version-file=version.vfl --windowed --name=WRLogWatcher WRMain.py
+pyinstaller -D --onedir --ico=zabbix_logo.ico --version-file=version.vfl --windowed --name=FTPZabbixAgent Main.py
 

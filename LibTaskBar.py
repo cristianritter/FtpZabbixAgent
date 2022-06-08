@@ -57,20 +57,15 @@ class TaskBarIcon(wx.adv.TaskBarIcon):
         """
         Metodo executado ao clicar com o botao esquerdo
         """
-        self.frame.Show()
-        self.frame.Raise()
-        self.frame.notebook.SetSelection(1)  #seleciona a tab selecionada
+        wx.MessageBox("Zabbix Agent para monitoração do espaço utilizado no storage Nexios. Configurações podem ser feitas no arquivo config.ini. Feito por Cristian Ritter", 'Sobre o aplicativo')
       
     def on_right_down(self, event, tab):
         """
         Metodo executado ao clicar com o botao direito em submenus\n
         button_label recebe a tab especifica de cada submenu 
         """
-        self.frame.Show()
-        for idx, name in enumerate(self.NAMES):
-            if name == tab:
-                self.frame.notebook.SetSelection(idx)  #seleciona a tab selecionada
-      
+        wx.MessageBox("Zabbix Agent para monitoração do espaço utilizado no storage Nexios. Configurações podem ser feitas no arquivo config.ini. Feito por Cristian Ritter", 'Sobre o aplicativo')
+
     def on_exit(self, event):
         wx.CallAfter(self.Destroy)
      
